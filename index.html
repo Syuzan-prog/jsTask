@@ -11,9 +11,29 @@
 </head>
 
 <body>
+<div class = "nav"><i class="fa fa-home hm" aria-hidden="true"></i><i class="fa fa-undo d1" aria-hidden="true"></i><i class="fa fa-repeat d2" aria-hidden="true"></i></div>
+<div class = "flex">
+    <div class = "left">
+        <div class = "all">
+            <div class = "srch"><i class="fa fa-search" aria-hidden="true"></i><input type = "text" placeholder = "Class Name"></div>
+            <div class = "tag1"><button id = "btn1" onclick = "subs('.mark1')"><p style = "margin-left:5px;">City</p></button></div>
+            <ul class = "tags">
+                <li class = "tag2"><button id = "btn2">City</button></li>
+                <li class = "tag3"><button id = "btn3">Country</button></li>
+                <li class = "tag4"><button id = "btn4">Location</button></li>
+                <li class = "tag5"><button id = "btn5">Univercity</button></li>
+                <li class = "tag6"><button id = "btn6">Long Class Name</button></li>
+            </ul>
+        </div>
+        </div>
 
-    <div class="container mt-4 ">
+    <div class="container  mt-4 ">
         <div class="card bg-dark text-white">
+        <div class = "card-header flexright">
+            <input type="checkbox" class = "checkbox1 " checked>   
+            
+        </div>
+        <div class="card-body" id = "blockcenter" >
             <div class=" p-5">
                 <p class="text_search"><span class="city">London</span> is the capital and leargest city of
                     <span class="country">England</span> and the <span class="country">Unitid Kingdom</span> .
@@ -24,8 +44,33 @@
                 </p>
             </div>
         </div>
+        <div class="card-footer">
+            <button type="button" class="btn text-white" data-toggle="collapse" data-target="#demo">Expand</button>
+            <div id="demo" class="collapse">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
     </div>
-
+            
+    </div>
+    <div class = "right">
+        <i class="fa fa-angle-double-right close" aria-hidden="true" id = "rightClose"></i>
+        <i class="fa fa-angle-double-right close2" aria-hidden="true" id = "rightOpen" style = "display:none;height:20px;"></i>
+            <div class = "rightS">
+                <ul class = "list">
+                    <li class = "element1"><i class="fa fa-eye" aria-hidden="true"></i><select><option>Country</option></select></li>
+                    <li class = "element2"><i class="fa fa-eye" aria-hidden="true"></i><p>England</p></li>
+                    <li class = "element3"><i class="fa fa-eye" aria-hidden="true"></i><p>United Kingdom</p></li>
+                    <li class = "element4"><i class="fa fa-eye" aria-hidden="true"></i><select><option>Long Class Name</option></select></li>
+                    <li class = "element5"><i class="fa fa-eye" aria-hidden="true"></i><p>England</p></li>
+                    <li class = "element6"><i class="fa fa-eye" aria-hidden="true"></i><select><option>City</option></select></li>
+                    <li class = "element7"><i class="fa fa-eye" aria-hidden="true"></i><p>England</p></li>
+                </ul>
+            </div>
+        </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

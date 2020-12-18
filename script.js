@@ -1,11 +1,9 @@
-
-
 $(document).ready(function(){
 	
 	$(document).on('click', '.city', function(){
 		
 		var triggerThis = $(this);
-		
+
 		if (!triggerThis.find('.city_frame').length) {
 		
 			triggerThis.css('font-weight', 'bold');
@@ -45,5 +43,21 @@ $(document).ready(function(){
 		triggerThis.remove();
 		
 		return false;
+	});
+
+	$(document).on('click', '#rightClose', function(){
+		$(".list").css('display','none')
+		$(".rightS").css('display','none')
+		$(".right").css('width','3vh')
+		$(".close").css('display','none')
+		$(".close2").css('display','block')
+		$(".close2").css('transform','rotate(180deg)')
+	});
+	$(document).on('click', '#rightOpen', function(){
+		$(".list").css('display','block')
+		$(".rightS").css('display','block')
+		$(".right").css('width','28vh')
+		$(".close").css('display','block')
+		$(".close2").css('display','none')
 	});
 });
